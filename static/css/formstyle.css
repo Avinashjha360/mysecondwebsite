@@ -1,224 +1,32 @@
-*{
+#form_box{
     max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-    text-decoration: none;
-    list-style: none; 
+    border: 1px solid cadetblue;
+    background-color: cadetblue;
 }
-html{
-    font-size: 10px;
-}
-body {
-    background-color: rgb(0, 204, 255);
-    background-size: 100%;
-}
-/*header starts */
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: rgb(5 117 112 / 82%);
-    width: 100vw;
-    height: 110px;
-    font-size: 8rem;
-    animation: header 5s linear 0s infinite  ;
-}
-@keyframes header{
-    0%{
-        background-color: rgba(165, 42, 42, 0.507);
-    }
-    25%{
-        background-color: rgba(85, 17, 148, 0.562);
-    }
-    50%{
-        background-color: rgba(9, 54, 112, 0.548);
-    }
-    75%{
-        background-color: rgba(122, 17, 122, 0.507);
-    }
-    100%{
-        background-color: rgba(11, 37, 37, 0.514);
-    }
-}
-#webname{
-    color: white;
-    animation-name: webname;
-    animation-duration: 2.3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes webname{
-    0%
-    {      color: #ffd000;
-        /* border-left: 2px solid rgb(255, 255, 255); */
-    }
-    25%{    color:rgb(252, 178, 178);
-        /* border-top: 2px solid rgb(255, 255, 255); */
-    }
-  50%{  color:rgb(255, 102, 0);
-    /* border-right: 2px solid rgb(255, 255, 255); */
-      
-  }
-  75%{
-    /* border-bottom: 2px solid rgb(255, 255, 255); */
-      color: rgb(60, 255, 0);
-  }
-}
-.logo{
-    display: none;
-}
-/*header end*/
-
-/*topnav start*/
-#topnav {
-    display: flex;
-    background-color: rgba(44, 40, 40, 0.699);
-    width: 100vw;
-}
-#topnav ul {
-    display: flex;
-    overflow:hidden;
-}
-#topnav ul li {
-    padding: 15px; /*margin: top right bottom left; */
-}
-#topnav ul li a {
-    display: block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.2rem;
-    padding: 5px 5px;
-    color: rgb(236, 227, 227);
-}
-#topnav ul li:hover{
-    background-color:#27a4ad27;
-    font-size: 2.3rem;
-}
-.submenu{
-    display:none;   
-}
-
-#topnav ul li:hover .submenu{
-    display: block;
-    position: absolute;
-    color: white;
-    background-color: rgba(44, 40, 40, 0.699);
-    margin-top: 15px;
-    margin-left: -15px;
-}
-#topnav ul li:hover .submenu ul{
-    display: block;
-}
-#topnav ul li:hover .submenu ul li{
-
-    margin: 10px;
-    border-bottom: 1px solid white;
-    font-size: small;
-}
-#topnav ul li:hover .submenu ul li:last-child
-{
-    border-bottom: none;
-}
-#topnav ul li:hover .submenu ul li a{
-    font-size: 20px;
-    cursor: pointer;
-}
-
-#submenu1 {
-    display: none;
-}
-.hoverme:hover #submenu1{
-    display: block;
-    position: absolute;
-    margin: -40;
-    margin-left: 110;
-    background-color: rgba(44, 40, 40, 0.699);
-    cursor: pointer;
-}
-/* search bar    */
-#topnav ul input {
-    float: right;
-    border-radius: 25px;
-    background-color: unset;
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
-    width: 300px;
-    height: 35px;
-    padding: 10px;
-    margin:20px 0 0px 590px;
-    animation: searchbar 2s linear 0s infinite ;
-}
-@keyframes searchbar{
-    0%
-    {      
-        border-left: 4px solid rgb(255, 4, 4);
-    }
-    25%{
-        
-        border-top: 4px solid rgb(255, 4, 4);
-    }
-  50%{
-    border-right: 4px solid rgb(255, 4,4);
-  }
-  75%{
-    border-bottom: 4px solid rgb(255, 4,4);
-  }
-}
-
-
-#mobnavin{
-    display: none;
-}
-
-::placeholder {
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    opacity: 1;
-    padding: 10px;
-}
-
-
-
-
-
-.container {
-    color: white;
-    /*padding:top right bottom left*/
-    /* margin:top right bottom left*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    margin: auto;
-    width: 100%;
-    
-}
-
-
-.box {
+.form_insidebox {
     display: flex;
     margin: auto;
     border-radius: 20px;
     background-color: rgba(32, 57, 94, 0.795);
     color: white;
-    /*border:size style color*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
-    font-size: 3rem;
-    margin-top: 90px;
+    font-size: 1rem;
+    margin: 50px 450px;
     box-shadow:  0px 0px 0px 15px rgb(22, 91, 241);
-
+    border: 20px solid black;
 
 }
-
-.box input {
+.form_insidebox input {
     background-color:unset;
     color: white;
     height: 30px;
-    width: 500px;
+    width: 550px;
     border:none;
     border-bottom: 1px solid white;
 }
 ::placeholder {
+    font-family:'Courier New', Courier, monospace;
         color: rgb(255, 255, 255);
         font-size: 1.5rem;
         opacity: 1;
@@ -226,10 +34,8 @@ body {
     }
 
 #radio input {
-
     height: 23px;
     width: 40px;
-
 }
 
 .inputstyle1
@@ -259,88 +65,4 @@ textarea
     background-color: #ffffff;
     font-size: 16px;
     margin-bottom: 30px;
-}
-.footer {
-    background-color: rgb(65, 58, 58);
-    text-align: center;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    height: 90px;
-    margin-top: 206px;
-    font-size: 30px;
-}
-
-@media(max-width:1100px) {
-    html {
-        font-size: 20px;
-    }
-    .header{
-        height: 240px;
-        font-size: 4rem;
-    }
-    .topnav ul li a{
-        font-size: 1rem;
-    }
-    .topnav a:hover {
-        font-size: 0.1rem;
-    }
-    .container {
-        color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display: flex;
-        margin-top: 300px;
-        width: 100%;
-
-    }
-
-
-    .box {
-        display: flex;
-        margin: auto;
-        color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 20px;
-        font-size: 2rem;
-    }
-
-    .box input {
-        font-family: Arial, Helvetica, sans-serif;
-        height: 100px;
-        width: 850px;
-        font-size: 2rem;
-        border-radius: 10px;
-    }
-
-    ::placeholder {
-        color: rgb(255, 255, 255);
-        font-size: 1.5rem;
-        opacity: 1;
-        padding: 1rem;
-    }
-
-    #radio input {
-
-        height: 50px;
-        width: 60px;
-
-    }
-
-    .inputstyle1 {
-        font-size: 1.5rem;
-        height: 50px;
-        width: 180px;
-        cursor: pointer;
-
-    }
-
-    .inputstyle2 {
-        display: inline;
-        height: 2px;
-        width: 2px;
-        cursor: pointer;
-
-    }
-    .search {
-    display: none;
-    }
 }
