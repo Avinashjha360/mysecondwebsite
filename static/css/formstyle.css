@@ -91,7 +91,7 @@ body {
     padding: 5px 5px;
     color: rgb(236, 227, 227);
 }
-#topnav ul li:hover{
+#topnav ul li:hover,.active{
     background-color:#27a4ad27;
     font-size: 2.3rem;
 }
