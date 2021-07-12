@@ -1,3 +1,4 @@
+.material-icons.md-50 { font-size: 95px; cursor: pointer;}
 *{
     max-width: 100%;
     margin: 0%;
@@ -91,7 +92,7 @@ body {
     padding: 5px 5px;
     color: rgb(236, 227, 227);
 }
-#topnav ul li:hover,.active{
+#topnav ul li:hover ,.active{
     background-color:#27a4ad27;
     font-size: 2.3rem;
 }
@@ -167,7 +168,7 @@ body {
 }
 
 
-#mobnavin{
+#mobnav{
     display: none;
 }
 
@@ -192,7 +193,7 @@ body {
 .home::before {
     content: "";
     position: absolute;
-    top: 180;
+    top: 160;
     background-color:  rgb(20, 13, 13);
     background-image: url('../image/emart2.jpg');
     background-repeat: no-repeat;
@@ -207,20 +208,20 @@ body {
     padding:0px 20px 0px 20px;
     /* background-color: rgba(0, 238, 255, 0.082); */
     color:red;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 5rem;
 }
 .home p{
    
     padding:0px 70px 0px 70px;
     color: rgb(238, 255, 0);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 3rem;
 }
 #name
 {   position:absolute;
     animation: name 4s linear 0s infinite;
-    z-index:-1;
+    z-index: -1;
 }
 @keyframes name{
     from{
@@ -253,7 +254,6 @@ body {
     font-size: 2rem;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    width: 140px;
     cursor: pointer;  
 }
 .btn:hover{
@@ -324,6 +324,9 @@ body {
     height: 166px;
     font-size: 13rem;
 }
+#name
+{   display: none;
+}
 
     .containerinside {
         flex-direction: column;
@@ -372,14 +375,14 @@ body {
     }
     #mobnav {
         display: none;
-        position: relative;
-        top: 0;
+        position: absolute;
+        width: 100%;
         justify-content: center;
         align-items: center;
-        background-color: rgb(53 17 112 / 82%);
+        background-color:teal;
         font-size:10rem;
         animation-name: avi;
-        animation-duration: 3s;
+        animation-duration: 0.1s;
         animation-play-state:paused;
         animation-fill-mode:forwards;
     }
@@ -389,20 +392,15 @@ body {
                    
                     height: 0px;
                    background-color: rgb(0, 255, 242);
-                   border: 2px solid red;
                 }
                 to {
                 
                     height: 600px;
-                    background-color:rgba(31, 36, 33, 0.514);
-                    border-bottom: 2px solid pink;
+                    background-color:teal;
                 }
                 
             }
-            #mobnavin{
-                display: none;  
-            }
-            #mobnavin ul li a{
+            #mobnav ul li a{
                 color: white;
             }          
 } 
