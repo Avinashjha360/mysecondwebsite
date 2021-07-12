@@ -9,7 +9,7 @@
             document.getElementById('para3').innerHTML = 'Illo nostrum numquam  aspernatur eumplaceat';
         }, 4000);
         setTimeout(() => {
-            document.getElementById('para4').innerHTML = 'sapiente iusto! eatae sapiente debitis aliquid! Deserunt,';
+            document.getElementById('para4').innerHTML = 'sapiente iusto! eatae sapiente debitis aliquid! ,';
         }, 5000);
 
         function submenu() {
@@ -33,40 +33,28 @@
         }
 
         function order() {
-            let button = document.getElementById('button')
-            button.innerHTML = "ORDERED"
-            button.style.border = '2px solid blue';
-            button.style.color = 'black';
-            button.style.backgroundColor = 'white';
-            setTimeout(() => {
-                button.innerHTML = 'ORDER AGAIN'
-            }, 4000);
-            setTimeout(() => {
-                button.innerHTML = "ORDER NOW";
-                button.style.border = '2px solid red';
-                button.style.color = 'red';
-                button.style.backgroundColor = 'white';
-            }, 7000);
+            let button = document.getElementById('button');
+            button.innerHTML = "ORDER PLACED";
+            button.style.border = '3px solid green';
+            button.style.fontSize='20px';
+            button.style.color = 'green';
         }
 
         let mobnav = document.getElementById('mobnav');
-        let mobnavin = document.getElementById('mobnavin');
+        let menu=document.getElementById('menu');
         let topnav = document.getElementById('topnav');
         function logoclick() {
 
             if (mobnav.style.animationPlayState != 'running') {
                 mobnav.style.display = 'flex';
-                mobnav.style.animationPlayState = 'running';
-
-                setTimeout(() => {
-                    mobnavin.style.display = 'flex';
-                }, 1000);
-
+                mobnav.style.animationPlayState = 'running'
+                menu.innerHTML="close";
+                
             }
             else {
-                mobnav.style.display = 'none';
-                mobnavin.style.display = 'none';
                 mobnav.style.animationPlayState = 'paused';
+                mobnav.style.display = 'none';
+                menu.innerHTML="menu";
 
             }
         }
