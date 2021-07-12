@@ -220,6 +220,7 @@ body {
 #name
 {   position:absolute;
     animation: name 4s linear 0s infinite;
+    z-index:-1;
 }
 @keyframes name{
     from{
